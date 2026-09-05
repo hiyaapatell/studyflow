@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyFlow | Gen Z Study Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">📚 StudyFlow</div>
+    <div class="nav-links">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#tasks">Tasks</a>
+      <a href="#focus">Focus</a>
+    </div>
+    <button class="profile">✨ My Space</button>
+  </nav>
+
+  <main>
+    <section class="hero" id="dashboard">
+      <div>
+        <p class="eyebrow">YOUR STUDY SPACE</p>
+        <h1>Study smarter.<br><span>Not harder.</span></h1>
+        <p class="subtitle">A simple study dashboard for busy Gen Z students. Plan your day, focus, and keep your momentum.</p>
+        <a class="primary-btn" href="#tasks">Start studying →</a>
+      </div>
+      <div class="hero-card">
+        <div class="card-top"><span>Today's vibe</span><span>🔥</span></div>
+        <h2>Locked In</h2>
+        <p>You're doing great. Keep the streak going.</p>
+        <div class="progress"><div style="width:72%"></div></div>
+        <small>72% daily goal</small>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><strong>4</strong><span>Tasks today</span></div>
+      <div class="stat"><strong>72%</strong><span>Daily progress</span></div>
+      <div class="stat"><strong>12🔥</strong><span>Day streak</span></div>
+      <div class="stat"><strong>48m</strong><span>Focus time</span></div>
+    </section>
+
+    <section class="section" id="tasks">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TODAY</p>
+          <h2>Your study plan</h2>
+        </div>
+        <button class="secondary-btn" onclick="addTask()">+ Add task</button>
+      </div>
+      <div id="taskList" class="task-list"></div>
+    </section>
+
+    <section class="focus-section" id="focus">
+      <div>
+        <p class="eyebrow">FOCUS MODE</p>
+        <h2>25 minutes. One goal.</h2>
+        <p>Put your phone down, choose one task, and let StudyFlow keep the time.</p>
+      </div>
+      <div class="timer-card">
+        <div id="timer">25:00</div>
+        <button class="primary-btn" onclick="toggleTimer()" id="timerBtn">Start focus</button>
+        <button class="text-btn" onclick="resetTimer()">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made for students who want less stress and more flow ✨</footer>
+  <script src="script.js"></script>
+</body>
+</html>
